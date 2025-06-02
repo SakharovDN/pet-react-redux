@@ -1,0 +1,13 @@
+.loader {
+  flex-shrink: 0;
+  color: var(--loader-color, var(--base-primary));
+  fill: currentcolor;
+  stroke: currentcolor;
+
+  &.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
