@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router';
 
 import { App } from './app/App';
 import store from './app/store';
+import './app/i18n';
 
 import './app/styles/main.scss';
 
