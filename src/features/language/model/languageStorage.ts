@@ -1,4 +1,4 @@
-import BrowserStorage from '@/shared/storage';
+import BrowserStorage from '@/shared/lib/browserStorage';
 
 import { Language } from './types';
 
