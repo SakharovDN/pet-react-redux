@@ -1,0 +1,9 @@
+{
+  "login-form": {
+    "email": "Email",
+    "email-placeholder": "Введите email",
+    "password": "Пароль",
+    "password-placeholder": "Введите пароль",
+    "login": "Войти"
+  }
+}
