@@ -1,5 +1,7 @@
 import { createAsyncThunk, GetThunkAPI, RootState, ThunkDispatch, UnknownAction } from '@reduxjs/toolkit';
 
+import { ErrorPayload } from '@/shared/api';
+
 interface AsyncThunkConfig {
   state: RootState;
   rejectValue: ErrorPayload;
@@ -10,9 +12,6 @@ interface AsyncThunkConfig {
   rejectedMeta?: ErrorPayload;
   serializedErrorType?: string;
 }
-
-// TODO: fix this
-type ErrorPayload = any;
 
 type PayloadCreator<Requested, Returned> = (
   body: Requested,
