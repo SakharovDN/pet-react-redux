@@ -15,6 +15,7 @@
 }
 
 .content {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -23,6 +24,12 @@
   background-color: var(--base-01);
   border-radius: 16px;
   box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+.language-select {
+  position: absolute;
+  top: 4px;
+  right: 4px;
 }
 
 .subtitle {
