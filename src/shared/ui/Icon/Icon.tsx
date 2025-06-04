@@ -6,7 +6,7 @@ import icons from './assets/icons.svg';
 
 import styles from './Icon.module.scss';
 
-export type IconName = 'check-circle' | 'hide' | 'show';
+export type IconName = 'check-circle' | 'chevron-down' | 'close' | 'hide' | 'remove' | 'show';
 
 interface IconProps extends Omit<SVGProps<SVGSVGElement>, 'height' | 'width'> {
   name: IconName;
@@ -15,7 +15,7 @@ interface IconProps extends Omit<SVGProps<SVGSVGElement>, 'height' | 'width'> {
 
 export const Icon = ({ name, size = 24, className, ...props }: IconProps) => {
   return (
-    <svg className={clsx(styles.icon, className)} height={size} width={size} {...props}>
+    <svg className={clsx(styles.icon, className)} height={size} width={size} {...props} viewBox="0 0 16 16">
       <use xlinkHref={`${icons}#${name}`} />
     </svg>
   );
