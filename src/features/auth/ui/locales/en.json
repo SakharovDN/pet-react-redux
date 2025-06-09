@@ -1,0 +1,9 @@
+{
+  "login-form": {
+    "email": "Email",
+    "email-placeholder": "Enter your email",
+    "password": "Password",
+    "password-placeholder": "Enter your password",
+    "login": "Log in"
+  }
+}

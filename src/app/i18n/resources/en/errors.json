@@ -1,0 +1,7 @@
+{
+  "field-required": "The field is required",
+  "invalid-email": "Invalid Email address",
+  "password": {
+    "min": "The password must contain at least {min} characters"
+  }
+}
