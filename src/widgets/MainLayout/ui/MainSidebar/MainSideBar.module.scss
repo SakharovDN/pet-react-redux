@@ -1,0 +1,89 @@
+.main-sidebar {
+  --text-color: var(--base-01);
+  --icon-color: var(--base-01);
+
+  position: sticky;
+  z-index: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 3.25rem;
+  min-width: 3.25rem;
+  height: 100dvh;
+  padding: 0.5rem 0.5rem 0.25rem;
+  background: var(--base-primary);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  transition-property: width, min-width;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: -1;
+    inline-size: 3rem;
+    block-size: 3rem;
+    pointer-events: none;
+    content: '';
+    border-top-left-radius: 1.25rem;
+    box-shadow: -1.5rem 0 var(--base-primary);
+  }
+
+  &.expanded {
+    width: 14.375rem;
+    min-width: 14.375rem;
+  }
+}
+
+.header {
+  display: flex;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 -1px 0 var(--base-primary-hover);
+}
+
+.sidebar-item {
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: flex-start;
+  inline-size: 100%;
+  max-inline-size: 100%;
+  block-size: 2rem;
+  padding: 0 0.625rem;
+  margin-bottom: 0.25rem;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.5rem;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  transition-property: color, background-color, opacity, box-shadow, border-color, border-radius, filter;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    background: var(--base-primary-hover);
+  }
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  &::before {
+    height: 100%;
+    content: '';
+  }
+}
+
+.collapse-icon {
+  transition: transform 0.3s ease-in-out;
+
+  &.rotated {
+    transform: rotate(180deg);
+  }
+}

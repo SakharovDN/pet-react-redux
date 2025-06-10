@@ -2,6 +2,7 @@
   font-weight: 500;
   color: var(--text-color, var(--text-01));
   letter-spacing: 0;
+  transition: color 0.2s ease-in-out;
 }
 
 .bold {
