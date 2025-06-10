@@ -9,7 +9,7 @@
   flex-direction: column;
   width: 3.25rem;
   min-width: 3.25rem;
-  height: 100dvh;
+  height: calc(100dvh - 3rem);
   padding: 0.5rem 0.5rem 0.25rem;
   background: var(--base-primary);
   transition-timing-function: ease-in-out;

@@ -25,6 +25,11 @@ export const MainSidebar = () => {
         <BodyS>Login</BodyS>
       </NavLink>
 
+      <NavLink className={({ isActive }) => clsx(styles.sidebarItem, isActive && styles.active)} to="sputnik">
+        <Icon name="cards" size={16} />
+        <BodyS>ProductCard</BodyS>
+      </NavLink>
+
       <footer className={styles.footer}>
         <button className={styles.sidebarItem} onClick={() => setExpanded((prev) => !prev)}>
           <Icon className={clsx(styles.collapseIcon, !expanded && styles.rotated)} name="chevron-left" size={16} />
