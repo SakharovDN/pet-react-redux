@@ -7,6 +7,7 @@ import icons from './assets/icons.svg';
 import styles from './Icon.module.scss';
 
 export type IconName =
+  | 'cards'
   | 'check-circle'
   | 'chevron-down'
   | 'chevron-left'
