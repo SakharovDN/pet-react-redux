@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import { Icon } from '@/shared/ui/Icon';
 import { BodyS } from '@/shared/ui/Typography';
 
-import styles from './MainSidebar1.module.scss';
+import styles from './MainSidebar.module.scss';
 
 export const MainSidebar = () => {
   const [expanded, setExpanded] = useState(true);
